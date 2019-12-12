@@ -35,8 +35,8 @@ class Joke extends Component {
   render() {
     // We will need some props, these props are mapped from the redux store (application state)
     return (
-      <div className="App">
-        <header className="App-header">
+      <div>
+        <header>
           <h1>Want to hear a joke?</h1>
           <form>
             <button onClick={this.jokeGenerator}>Fetch (get it!) jokes!</button>
