@@ -1,30 +1,27 @@
 import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
-import Joke from "./joke";
+import ReactRevealText from "react-reveal-text";
+class Wrapper extends React.Component {
+  constructor() {
+    super();
+    this.state = { show: false };
+  }
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <div>
-          <Joke />
+  componentDidMount() {
+    setTimeout(() => {
+      this.setState({ show: true });
+    }, 300);
+  }
+
+  render() {
+    return (
+      <div className="upper-background">
+        <div className="text-styles">
+          <ReactRevealText show={this.state.show} text="MAKE IT UNCOMMON" />
         </div>
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+      </div>
+    );
+  }
 }
 
-export default App;
+export default Wrapper;
