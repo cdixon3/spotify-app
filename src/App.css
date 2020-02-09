@@ -10,9 +10,14 @@
   color: white;
   font-size: 24px;
   line-height: 36px;
-  font-family: sans-serif;
+  font-family: akzidenz-grotesk;
   text-align: center;
   letter-spacing: 1em;
   padding-left: 1em;
-  padding-bottom: 20vh;
+  padding-bottom: 8vh;
+}
+
+.button-styles {
+  text-align: center;
+  font-family: akzidenz-grotesk;
 }
